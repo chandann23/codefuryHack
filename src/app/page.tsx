@@ -84,7 +84,7 @@ export default function Component() {
                 <p className="text-muted-foreground">
                   Acquire essential first aid skills to help yourself and others in an emergency.
                 </p>
-                <Button className="mt-4">Start Learning</Button>
+                <Button className="mt-4" asChild><Link href="/LearnMore">Start Learning</Link></Button>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Emergency Response</h3>
@@ -113,7 +113,7 @@ export default function Component() {
                   <p className="text-muted-foreground">
                     Receive instant notifications about emergencies and disasters in your area.
                   </p>
-     <Button className="mt-4" asChild><Link href="/sign-up">Sign up for updates</Link></Button>
+     <Button className="mt-4" asChild><Link href="/ngo_page">Sign up for updates</Link></Button>
 
                 </div>
                 <div className="grid gap-1">
