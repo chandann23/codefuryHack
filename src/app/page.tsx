@@ -27,7 +27,7 @@ export default function Component() {
                     Get Started
                   </Link>
                                <Link
-                  href="#"
+                  href="/LearnMore"
                   className="inline-flex items-center text-sm pl-2 font-medium text-primary hover:underline underline-offset-4"
                   prefetch={false}
                 >
