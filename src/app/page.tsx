@@ -5,7 +5,7 @@ import router from "next/navigation"
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
-     <main className="flex-1">
+      <main className="flex-1">
         <section className="w-full pt-12 md:pt-24 lg:pt-32 border-b border-muted">
           <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
             <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
@@ -20,13 +20,13 @@ export default function Component() {
               <div className="flex flex-col items-start space-y-4">
 
                 <Link
-                    href="/dashboard"
-                    className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Get Started
-                  </Link>
-                               <Link
+                  href="/dashboard"
+                  className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  prefetch={false}
+                >
+                  Get Started
+                </Link>
+                <Link
                   href="/LearnMore"
                   className="inline-flex items-center text-sm pl-2 font-medium text-primary hover:underline underline-offset-4"
                   prefetch={false}
@@ -77,7 +77,7 @@ export default function Component() {
                 <p className="text-muted-foreground">
                   Learn how to create an emergency plan, build a disaster kit, and stay informed.
                 </p>
- <Button className="mt-4" asChild><Link href="/LearnMore">Start Learning</Link></Button>
+                <Button className="mt-4" asChild><Link href="/chat">Start Learning</Link></Button>
 
               </div>
               <div className="grid gap-1">
@@ -85,14 +85,14 @@ export default function Component() {
                 <p className="text-muted-foreground">
                   Acquire essential first aid skills to help yourself and others in an emergency.
                 </p>
-                <Button className="mt-4" asChild><Link href="/LearnMore">Start Learning</Link></Button>
+                <Button className="mt-4" asChild><Link href="/chat">Start Learning</Link></Button>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Emergency Response</h3>
                 <p className="text-muted-foreground">
                   Understand how to respond effectively during different types of disasters.
                 </p>
- <Button className="mt-4" asChild><Link href="/LearnMore">Start Learning</Link></Button>
+                <Button className="mt-4" asChild><Link href="/chat">Start Learning</Link></Button>
 
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Component() {
                   <p className="text-muted-foreground">
                     Receive instant notifications about emergencies and disasters in your area.
                   </p>
-     <Button className="mt-4" asChild><Link href="/ngo_page">Sign up for updates</Link></Button>
+                  <Button className="mt-4" asChild><Link href="/ngo_page">Sign up for updates</Link></Button>
 
                 </div>
                 <div className="grid gap-1">
@@ -200,7 +200,7 @@ export default function Component() {
   )
 }
 
-function ArrowRightIcon(props : LucideProps) {
+function ArrowRightIcon(props: LucideProps) {
   return (
     <svg
       {...props}
@@ -221,7 +221,7 @@ function ArrowRightIcon(props : LucideProps) {
 }
 
 
-function CloudRainIcon(props : LucideProps) {
+function CloudRainIcon(props: LucideProps) {
   return (
     <svg
       {...props}
@@ -244,7 +244,7 @@ function CloudRainIcon(props : LucideProps) {
 }
 
 
-function EarthIcon(props : LucideProps) {
+function EarthIcon(props: LucideProps) {
   return (
     <svg
       {...props}
@@ -267,7 +267,7 @@ function EarthIcon(props : LucideProps) {
 }
 
 
-function MapIcon(props : LucideProps) {
+function MapIcon(props: LucideProps) {
   return (
     <svg
       {...props}
@@ -289,7 +289,7 @@ function MapIcon(props : LucideProps) {
 }
 
 
-function MountainIcon(props  : LucideProps) {
+function MountainIcon(props: LucideProps) {
   return (
     <svg
       {...props}
@@ -309,7 +309,7 @@ function MountainIcon(props  : LucideProps) {
 }
 
 
-function TornadoIcon(props : LucideProps) {
+function TornadoIcon(props: LucideProps) {
   return (
     <svg
       {...props}
@@ -333,7 +333,7 @@ function TornadoIcon(props : LucideProps) {
 }
 
 
-function TriangleAlertIcon(props : LucideProps) {
+function TriangleAlertIcon(props: LucideProps) {
   return (
     <svg
       {...props}
