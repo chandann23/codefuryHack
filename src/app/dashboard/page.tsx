@@ -9,7 +9,7 @@ import { Card } from "~/components/ui/card";
 import { Button, buttonVariants } from "~/components/ui/button";
 import { AddDisasterDialog } from "~/components/AddDisasterDialog";
 import { MapPin } from "lucide-react"; // New import for the location icon
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 // Define the Disaster type
@@ -73,8 +73,8 @@ function DisasterContent() {
           Welcome to your essential hub for real-time updates on natural disasters worldwide. Our mission is to keep you informed and prepared in the face of nature's most formidable challenges.
         </p>
         <div className="flex flex-wrap gap-4">
-          <Button className="bg-white text-blue-800 hover:bg-blue-100">Learn More</Button>
-          <Button className="bg-transparent border border-white hover:bg-blue-700">Emergency Contacts</Button>
+          <Button className="bg-white text-blue-800 hover:bg-blue-100" asChild><Link href="/LearnMore">Learn More</Link></Button>
+          <Button className="bg-transparent border border-white hover:bg-blue-700" asChild><Link href="/ngo_page">Emergency Contacts</Link></Button>
         </div>
       </section>
 
@@ -100,7 +100,7 @@ function DisasterContent() {
             <div className="p-4">
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-bold">{disaster.title}</h3>
-               <a
+                <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(disaster.location)}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -122,7 +122,7 @@ function DisasterContent() {
                 </Button>
                 <Link
                   href={`/disaster/${encodeURIComponent(disaster.title)}`}
-                  className={buttonVariants({className: ""})}
+                  className={buttonVariants({ className: "" })}
                 >
                   Learn
                 </Link>
@@ -137,7 +137,7 @@ function DisasterContent() {
           <p>New disaster type added: {newDisasterType}</p>
           <Link
             href={`/disaster/${encodeURIComponent(newDisasterType)}`}
-            className={buttonVariants({className: "mt-2"})}
+            className={buttonVariants({ className: "mt-2" })}
           >
             Learn about {newDisasterType}
           </Link>

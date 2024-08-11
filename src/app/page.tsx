@@ -77,7 +77,8 @@ export default function Component() {
                 <p className="text-muted-foreground">
                   Learn how to create an emergency plan, build a disaster kit, and stay informed.
                 </p>
-                <Button className="mt-4">Start Learning</Button>
+ <Button className="mt-4" asChild><Link href="/LearnMore">Start Learning</Link></Button>
+
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">First Aid Training</h3>
@@ -91,7 +92,8 @@ export default function Component() {
                 <p className="text-muted-foreground">
                   Understand how to respond effectively during different types of disasters.
                 </p>
-                <Button className="mt-4">Start Learning</Button>
+ <Button className="mt-4" asChild><Link href="/LearnMore">Start Learning</Link></Button>
+
               </div>
             </div>
           </div>
